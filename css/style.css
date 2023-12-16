@@ -1,0 +1,191 @@
+/* warna saya */
+
+.bgku {
+  background-color: #232946;
+}
+
+.textku {
+  color: #fffffe;
+}
+
+.textku2 {
+  color: #b8c1ec;
+}
+
+.textku3 {
+  color: #eebbc3;
+}
+
+.btnku {
+  background-color: #b8c1ec;
+  color: #212529;
+}
+
+.btnku:hover {
+  background-color: #eebbc3;
+  color: #212529;
+}
+
+/* warna saya end */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* navbar saya */
+.nav-link {
+  color: #fffffe !important;
+}
+.nav-link:hover {
+  color: #eebbc3 !important;
+}
+ul {
+  display: flex;
+  list-style: none;
+}
+.navbar-brand {
+  font-size: 25px;
+  font-weight: 500;
+}
+.navbar {
+  box-shadow: var(--box-shadow);
+}
+nav li {
+  border: none;
+  display: inline-block;
+  padding-right: 5px;
+  transition: all linear 0.5s;
+  margin-right: 20px;
+  font-size: 18px;
+}
+nav li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  padding-right: 5px;
+}
+ul li {
+  cursor: pointer;
+  position: relative;
+}
+li.active::after {
+  position: absolute;
+  content: '';
+  height: 6px;
+  width: 100%;
+  background-color: #ff105e;
+  left: 0;
+  bottom: -7px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  animation: appear 0.2s linear;
+}
+@keyframes appear {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  li.active::after {
+    width: 30%;
+  }
+}
+
+/* navbar saya end */
+
+/* hero */
+
+.text-terpotong {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .text-terpotong {
+    display: block;
+  }
+}
+
+.btn2 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.glass {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* menu start */
+
+.card2 {
+  width: 77%;
+}
+
+#review {
+  height: 100vh;
+}
+@media screen and (max-width: 767px) {
+  .card2 {
+    width: 100%;
+  }
+  #review {
+    height: auto;
+  }
+}
+
+.text-coklat {
+  color: brown;
+}
+
+.btnbuy {
+  background-color: #232946;
+  color: white;
+}
+
+.btnbuy:hover {
+  color: white;
+  background-color: brown;
+}
+
+.radius {
+  border-radius: 100%;
+}
+
+/* footer */
+
+.lebarlogo {
+  width: 175px;
+}
+.price2 {
+  float: right;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.back01 {
+  background-color: #fff;
+}
+
+/* test */
+
+#astro,
+#regular,
+#asli {
+  animation: zoom-in 0.5s ease-out;
+}
+
+@keyframes zoom-in {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
